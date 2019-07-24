@@ -48,6 +48,15 @@ body:before {
 	bottom: 1000px;
 	background: url(../img/moon.png) no-repeat center center;
 	background-size: 38%;
+	display: flex;
+	display: -webkit-flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.inText{
+	position: absolute;
+	z-index: 1;
 }
 #mount{
 	width: 100%;
@@ -100,3 +109,36 @@ body:before {
 	background-color: #ef9cb1;
 	color: white;
 }
+
+
+#breathe-btn {
+				position: absolute;
+				width: 38vw;
+				height: 38vw;
+				/*margin: 40px auto;
+				line-height: 40px;*/
+				border: 1px solid #2b92d4;
+				border-radius: 50%;
+				color: #fff;
+				cursor: pointer;
+				box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+				overflow: hidden;
+				background-image: -webkit-gradient(linear, left top, left bottom, from(#6cc3fe), to(#21a1d0));
+				-webkit-animation-timing-function: ease-in-out;
+				-webkit-animation-name: breathe;
+				-webkit-animation-duration: 2700ms;
+				-webkit-animation-iteration-count: infinite;
+				-webkit-animation-direction: alternate;
+			}
+			
+			@-webkit-keyframes breathe {
+				0% {
+					opacity: .2;
+					box-shadow: 0 1px 2px rgba(255, 255, 255, 0.1);
+				}
+				100% {
+					opacity: 1;
+					border: 1px solid rgba(59, 235, 235, 1);
+					box-shadow: 0 1px 30px rgba(59, 255, 255, 1);
+				}
+			}
