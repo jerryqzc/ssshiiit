@@ -45,7 +45,7 @@ body:before {
 	font-family: create;
 	color: #333333;
 	text-align: center;
-	margin-top: 200px;
+	bottom: 1000px;
 	background: url(../img/moon.png) no-repeat center center;
 	background-size: 38%;
 }
@@ -68,7 +68,7 @@ body:before {
 	height: 680px;
 	position: absolute;
 	z-index: 0;
-	margin-top: 1000px;
+	bottom: 70px;
 }
 #inRepeat{
 	width: 56%;
