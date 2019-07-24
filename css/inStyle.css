@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/*font-family: MFLiHei_Noncommercial-Regular;*/
+}
+
+body {
+	background: url(../img/iq_bg.png) no-repeat center center;
+	background-size: cover;
+	background-attachment: fixed;
+	background-color: #CCCCCC;
+}
+
+body:before {
+	content: "";
+	background: url(../img/iq_bg.png) no-repeat center center;
+	background-size: 122%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	z-index: -4;
+}
+
+@font-face {
+	font-family: 'create';
+	src: url(../fonts/create.otf);
+}
+@font-face {
+	font-family: 'subs';
+	src: url(../fonts/subs.TTF);
+}
+
+.inTitle{
+	width: 100%;
+	height: 600px;
+	position: absolute;
+	z-index: -4;
+	line-height: 600px;
+	font-size: 68px;
+	font-family: create;
+	color: #333333;
+	text-align: center;
+	margin-top: 200px;
+	background: url(../img/moon.png) no-repeat center center;
+	background-size: 38%;
+}
+#mount{
+	width: 100%;
+	position: absolute;
+	bottom: 710px;
+	
+	z-index: -3;
+}
+#water{
+	width: 100%;
+	position: absolute;
+	bottom: 0px;
+
+	z-index: -2;
+}
+.inForm{
+	width: 100%;
+	height: 680px;
+	position: absolute;
+	z-index: 0;
+	margin-top: 1000px;
+}
+#inRepeat{
+	width: 56%;
+	height: 80px;
+	margin-top: 64px;
+	margin-left: 20%;
+}#inName,#inTel{
+	width: 100%;
+	height: 100%;
+	border-radius: 50px;
+	border: none;
+	padding-left: 40px;
+	font-family: subs;
+	font-size: 40px;
+	outline: none;
+}
+#iq{
+	width: 60%;
+	height: 80px;
+	border-radius: 50px;
+	border: none;
+	text-align: center;
+	font-family: subs;
+	font-size: 40px;
+	outline: none;
+	position: relative;
+	margin-top: 200px;
+	left: 20%;
+	background-color: #ef9cb1;
+	color: white;
+}
