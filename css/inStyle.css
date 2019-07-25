@@ -1,6 +1,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	font-size: 0px;
 }
 
 html {
@@ -44,7 +45,7 @@ body:before {
 	line-height: 600px;
 	font-size: 68px;
 	font-family: create;
-	color: #333333;
+	color: #475C7C;
 	text-align: center;
 	bottom: 1000px;
 	/*	background: url(../img/moon.png) no-repeat center center;*/
@@ -59,6 +60,7 @@ body:before {
 .inText {
 	position: absolute;
 	z-index: 1;
+	font-size: 68px;
 }
 
 #mount {
@@ -120,6 +122,7 @@ body:before {
 
 #breathe-btn {
 	position: absolute;
+	z-index: 0;
 	width: 38vw;
 	height: 38vw;
 	/*margin: 40px auto;
@@ -128,12 +131,12 @@ body:before {
 	border-radius: 50%;
 	/*				color: #fff;*/
 	cursor: pointer;
-	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
-	overflow: hidden;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf0f0), to(#fcf0f0));
-	-webkit-animation-timing-function: ease-in-out;
+/*	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+*/	overflow: hidden;
+	background-color: #fcf0f0;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf0f0), to(#fcf0f0));	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-name: breathe;
-	-webkit-animation-duration: 2700ms;
+	-webkit-animation-duration: 1800ms;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 }
@@ -152,6 +155,7 @@ body:before {
 
 #breathe-btn2 {
 	position: absolute;
+	z-index: -1;
 	width: 48vw;
 	height: 48vw;
 	/*margin: 40px auto;
@@ -162,10 +166,10 @@ body:before {
 	cursor: pointer;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 	overflow: hidden;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf3f3), to(#fcf3f3));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#e0d3e5), to(#e0d3e5));
 	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-name: breathe2;
-	-webkit-animation-duration: 2700ms;
+	-webkit-animation-duration: 2000ms;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 }
@@ -173,17 +177,18 @@ body:before {
 @-webkit-keyframes breathe2 {
 	0% {
 		opacity: .2;
-		box-shadow: 0 1px 2px rgba(250, 245, 245, 0.1);
+		box-shadow: 0 1px 2px rgba(213, 199, 224, 0.1);
 	}
 	100% {
 		opacity: 1;
 		/*border: 1px solid rgba(250, 240, 240, 1);*/
-		box-shadow: 0 1px 30px rgba(250, 245, 245, 1);
+		box-shadow: 0 1px 30px rgba(213, 199, 224, 1);
 	}
 }
 
 #breathe-btn3 {
 	position: absolute;
+	z-index: -2;
 	width: 58vw;
 	height: 58vw;
 	/*margin: 40px auto;
@@ -194,10 +199,10 @@ body:before {
 	cursor: pointer;
 	box-shadow: 0 1px 2px rgba(0, 0, 0, .3);
 	overflow: hidden;
-	background-image: -webkit-gradient(linear, left top, left bottom, from(#fcf3f3), to(#fcf3f3));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#d5c7e0), to(#d5c7e0));
 	-webkit-animation-timing-function: ease-in-out;
 	-webkit-animation-name: breathe2;
-	-webkit-animation-duration: 2700ms;
+	-webkit-animation-duration: 2200ms;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-direction: alternate;
 }
@@ -213,3 +218,4 @@ body:before {
 		box-shadow: 0 1px 30px rgba(253, 245, 245, 1);
 	}
 }
+
